@@ -8,14 +8,14 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GetID {
-
+    //Generates a random id by utilizing random and a while loop to validate that the ID is available
     public int GetAnID() {
-        int ID = 0, randomID = 0;
+        int ID = 0, randomID;
         Random rID = new Random();
         boolean match = true;
         File idFile = new File("C:\\GenSpark\\TeamProject\\GitFork\\BoardingPass\\BoardingPass\\src\\com\\TakenIDNumbers.txt");
 
-        while(match == true) {
+        while(match) {
             match = false;
             randomID = rID.nextInt(10000000) + 1;
 
@@ -24,11 +24,11 @@ public class GetID {
                 int readSize = reader.read();
                 Scanner findID = new Scanner(idFile);
                 while(findID.hasNextLine()){
-                    if(randomID == Integer.valueOf(findID.nextLine())){
+                    if(randomID == Integer.parseInt(findID.nextLine())){
                         match = true;
                     }
                 }
-                if(match == false){
+                if(!match){
                     ID = randomID;
                     FileWriter fw = new FileWriter(idFile, true);
                     BufferedWriter bw = new BufferedWriter(fw);

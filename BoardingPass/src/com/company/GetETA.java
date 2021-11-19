@@ -9,7 +9,7 @@ public class GetETA {
     //So the range would be this HHMM like if the user were to type in 10:30
 
     public String getArrivalTime(String Departure){
-
+        // generates a random time with a range between 1 and 5, the departure time is then added by that time to create the arrival time
         Random rTime = new Random();
         int randomTime = rTime.nextInt(5) + 1, newETA = 0;
         String[] timeSplit = Departure.split(":", 0);
