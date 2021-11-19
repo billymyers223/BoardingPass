@@ -1,0 +1,14 @@
+ID #: 1483848  Name: Cody  Gender: M  Age: 24  Date: 10-20-93
+Phone #: 225-236-7887  Email: c@gmail.com
+Origin: Florida  Destination: California
+Departure Time: 12:34  Arrival Time: 16:34  Price: 100
+
+ID #: 914275  Name: Sam  Gender: F  Age: 11  Date: 12-22-21
+Phone #: 144-144-2342  Email: s@gmail.com
+Origin: Oregan  Destination: Idaho
+Departure Time: 16:17  Arrival Time: 18:17  Price: 37
+
+ID #: 1518355  Name: Bill  Gender: M  Age: 66  Date: 04-14-23
+Phone #: 667-689-2721  Email: b@tampa.mail.com
+Origin: Florida  Destination: Texas
+Departure Time: 12:16  Arrival Time: 13:16  Price: 40
